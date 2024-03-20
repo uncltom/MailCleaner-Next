@@ -52,8 +52,8 @@ sub do($this)
     my ($SRCDIR, $MYMAILCLENARPWD);
     my $conf = ReadConfig::getInstance();
     $SRCDIR = $conf->getOption('SRCDIR');
-    $MYMAILCLENARPWD = $conf->getOption('MYMAILCLENARPWD') || undef;
-    unless (defined($MYMAILCLENARPWD)) {
+    $MYMAILCLEANERPWD = $conf->getOption('MYMAILCLEANERPWD') || undef;
+    unless (defined($MYMAILCLEANERPWD)) {
         print "Database password is not configured in `/etc/mailcleaner.conf`. Please run previous step. [Enter]\n";
         my $null = <STDIN>;
         return 0;
