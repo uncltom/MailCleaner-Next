@@ -5,4 +5,4 @@ STAGE=master
 if [[ "$2" -eq "nopass" ]]; then
     STAGE=$STAGE-nopass
 fi
-systemctl $1 mariadb\@$stage
+systemctl $1 mariadb\@$STAGE
